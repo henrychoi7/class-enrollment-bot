@@ -1,0 +1,15 @@
+---
+declared-services:
+  my-conversation-service:
+    label: Assistant
+    plan: free
+applications:
+- name: gc201233444
+  command: npm start
+  path: .
+  memory: 128M
+  instances: 1
+  services:
+  - Watson Assistant_Gachon
+  env:
+    NPM_CONFIG_PRODUCTION: false
